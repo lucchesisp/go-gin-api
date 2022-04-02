@@ -1,5 +1,11 @@
 package main
 
+import (
+	"github.com/lucchesisp/go-gin-api/database"
+	"github.com/lucchesisp/go-gin-api/routes"
+)
+
 func main() {
-	r := gin.
+	database.ConectaComBancoDeDados()
+	routes.HandleRequest()
 }
